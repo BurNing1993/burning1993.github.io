@@ -20,7 +20,7 @@ function getEntry() {
     });
   return {
     ...entry,
-    index: '/src/index.js'
+    index: './src/index.js'
   }
 };
 
@@ -68,6 +68,10 @@ module.exports = {
     ],
   },
   plugins: [
-    ...htmlPluginArray
+    ...htmlPluginArray,
+    new HtmlWebpackPlugin({
+      filename : 'index.html',
+      template : './index.html',
+    })
   ]
 }

@@ -2,28 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HomePage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
 </head>
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+  }
+
+  .background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .container h3 {
+    color: #bdc3c7;
+  }
+</style>
 
 <body>
-    <div class="container text-center">
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-success">Success</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-      <button type="button" class="btn btn-warning">Warning</button>
-      <button type="button" class="btn btn-info">Info</button>
-      <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
-      
-      <button type="button" class="btn btn-link">Link</button>
-    </div>
+  <div class="container text-center">
+    <h3>To Be Continued</h3>
+  </div>
+  <canvas class="background"></canvas>
 </body>
+<script>
+  window.onload = function () {
+    Particles.init({
+      selector: '.background',
+      color: ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e'],
+      connectParticles: true,
+      maxParticles: 200,
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+            maxParticles: 100,
+            connectParticles: true
+          }
+        }, {
+          breakpoint: 425,
+          options: {
+            maxParticles: 50,
+            connectParticles: true
+          }
+        }, {
+          breakpoint: 320,
+          options: {
+            maxParticles: 20,
+            connectParticles: true
+          }
+        }
+      ]
+    });
+  };
+</script>
 
 </html>

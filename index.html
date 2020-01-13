@@ -9,9 +9,15 @@
   <title>HomePage</title>
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./common.css">
   <link rel="stylesheet" href="lib/fullpage.css">
   <script src="lib/fullpage.js"></script>
+  <style>
+    html,body{
+      background-color:rgb(235, 235, 235);
+    }
+  </style>
 </head>
 
 <body>
@@ -142,5 +148,47 @@
     onSlideLeave: function (section, origin, destination, direction) { }
   });
 </script>
-
+<script type="text/javascript">
+  (function($){
+    $.fn.snow = function(options){
+    var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('❄'),
+    documentHeight 	= $(document).height(),
+    documentWidth	= $(document).width(),
+    defaults = {
+      minSize		: 6,
+      maxSize		: 10,
+      newOn		: 1000,
+      flakeColor	: "#FFFFFF" /* 此处可以定义雪花颜色 */
+    },
+    options	= $.extend({}, defaults, options);
+    var interval= setInterval( function(){
+    var startPositionLeft = Math.random() * documentWidth - 100,
+    startOpacity = 0.5 + Math.random(),
+    sizeFlake = options.minSize + Math.random() * options.maxSize,
+    endPositionTop = documentHeight - 200,
+    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+    durationFall = documentHeight * 10 + Math.random() * 5000;
+    $flake.clone().appendTo('body').css({
+      left: startPositionLeft,
+      opacity: startOpacity,
+      'font-size': sizeFlake,
+      color: options.flakeColor
+    }).animate({
+      top: endPositionTop,
+      left: endPositionLeft,
+      opacity: 0.2
+    },durationFall,'linear',function(){
+      $(this).remove()
+    });
+    }, options.newOn);
+      };
+  })(jQuery);
+  $(function(){
+      $.fn.snow({ 
+        minSize: 5, /* 定义雪花最小尺寸 */
+        maxSize: 20,/* 定义雪花最大尺寸 */
+        newOn: 800  /* 定义密集程度，数字越小越密集 */
+      });
+  });
+  </script>
 </html>

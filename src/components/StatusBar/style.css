@@ -1,0 +1,87 @@
+#status-bar {
+  display: flex;
+  height: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+#status-bar .left {
+  display: flex;
+  align-items: center;
+}
+#status-bar .left .signal {
+  display: flex;
+  height: 15px;
+  align-items: flex-end;
+  margin-right: 5px;
+}
+#status-bar .left  .wifi {
+  display: flex;
+  align-items: center;
+}
+#status-bar .left .signal .signal-item {
+  background: #e4dccf;
+  background: #e4dccf66;
+  width: 3px;
+  margin-right: 1px;
+  border-radius: 2px;
+}
+#status-bar .left .signal .signal-item-fill {
+  background: #e4dccf;
+}
+#status-bar .left .signal .signal-item-1 {
+  height: 25%;
+}
+#status-bar .left .signal .signal-item-2 {
+  height: 50%;
+}
+#status-bar .left .signal .signal-item-3 {
+  height: 75%;
+}
+#status-bar .left .signal .signal-item-4 {
+  height: 100%;
+}
+@keyframes top {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+@keyframes middle {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#top {
+  animation: top 2s;
+}
+#middle {
+  animation: middle 2s;
+}
+
+#status-bar .battery {
+  width: 25px;
+  height: 15px;
+  padding: 2px;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+#status-bar .battery .battery-top {
+  position: absolute;
+  width: 3px;
+  height: 5px;
+  background-color: #fff;
+  top: 4px;
+  right: -3px;
+}

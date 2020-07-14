@@ -9,6 +9,8 @@ body{
   border-radius: 20px;
   color: #fff;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #app{
@@ -21,11 +23,32 @@ body{
   align-items: center;
 }
 
+
 @media (min-width: 576px) {
   #phone {
     max-width: 340px;
   }
 }
+
+#dock{
+  height: 75px;
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+#desk{
+  flex-grow: 1;
+}
+
 /* @media (min-width: 768px) {
   #phone {
     max-width: 340px;

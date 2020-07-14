@@ -1,10 +1,12 @@
 import React from "react";
+import Dock from "./Dock";
+import Desk from "./Desk";
 
 const Home = () => {
   return (
     <>
-      <div id="desk">Desk</div>
-      <div id="dock">Dock</div>
+      <Desk />
+      <Dock />
     </>
   );
 };

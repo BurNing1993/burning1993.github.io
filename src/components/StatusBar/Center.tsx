@@ -12,8 +12,10 @@ const Center = () => {
   const [time, setTime] = useState("");
   useEffect(() => {
     setTime(getTime());
-    const timer = setInterval(() => setTime(getTime()), 60000);
-    return clearInterval(timer);
+    const timer = setInterval(() => {
+      setTime(getTime())
+    }, 60000);
+    return ()=>clearInterval(timer);
   }, []);
   return <div className="center">{time}</div>;
 };

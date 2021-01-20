@@ -5,6 +5,7 @@ export interface Project {
   desc: string;
   demoUrl?: string;
   sourceCodeUrl?: string;
+  qrcodeUrl?: string;
 }
 
 export interface ProjectItem {
@@ -22,7 +23,7 @@ const projectList: ProjectItem[] = [
         tags: ["Vue3.0", 'ElementPlus'],
         desc: "Vue3 + Element+ 管理系统",
         demoUrl: "https://vue-element-admin-plus.vercel.app/",
-        sourceCodeUrl: "https://github.com/BurNing1993/vue-element-admin-plus"
+        sourceCodeUrl: "https://github.com/BurNing1993/vue-element-admin-plus",
       },
       {
         imgUrl: require('./images/vant-components.jpeg').default,
@@ -31,6 +32,14 @@ const projectList: ProjectItem[] = [
         desc: "Vant 的扩展和封装,方便使用",
         demoUrl: "https://www.npmjs.com/package/vant-components",
         sourceCodeUrl: "https://github.com/BurNing1993/vant-components"
+      },
+      {
+        imgUrl: require('./images/gh_4e63daca45ae_258.jpg').default,
+        name: "J4FUN",
+        tags: ["微信小程序"],
+        desc: "微信小程序- 1.robot,2.贪吃蛇",
+        sourceCodeUrl: "https://github.com/BurNing1993/fun-miniprogram",
+        qrcodeUrl: require('./images/gh_4e63daca45ae_258.jpg').default
       },
     ]
   },

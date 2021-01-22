@@ -39,7 +39,7 @@ const projectList: ProjectItem[] = [
         tags: ["微信小程序"],
         desc: "微信小程序- 1.robot,2.贪吃蛇",
         sourceCodeUrl: "https://github.com/BurNing1993/fun-miniprogram",
-        qrcodeUrl: require('./images/gh_4e63daca45ae_258.jpg').default
+        qrcodeUrl: require('./images/oJT3s0CgEME8QVMhc2Nmn6N2f8-Q.jpg').default
       },
     ]
   },

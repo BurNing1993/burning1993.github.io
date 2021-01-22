@@ -34,7 +34,7 @@ const projectList: ProjectItem[] = [
         sourceCodeUrl: "https://github.com/BurNing1993/vant-components"
       },
       {
-        imgUrl: require('./images/gh_4e63daca45ae_258.jpg').default,
+        imgUrl: require('./images/weapp.jpg').default,
         name: "J4FUN",
         tags: ["微信小程序"],
         desc: "微信小程序- 1.robot,2.贪吃蛇",

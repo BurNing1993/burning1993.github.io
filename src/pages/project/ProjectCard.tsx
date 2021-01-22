@@ -11,7 +11,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-2">
       <div className="card border-light">
-        <img src={project.imgUrl} className="card-img-top" alt={project.name} />
+        <img src={project.imgUrl} className="card-img-top img-fluid" style={{objectFit:'cover'}} alt={project.name} />
         <div className="card-body">
           <h5 className="card-title" title={project.name}>
             <span>{project.name}</span>

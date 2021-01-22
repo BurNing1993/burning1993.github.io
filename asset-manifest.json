@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.23b02396.chunk.css",
-    "main.js": "/static/js/main.9ff0d15a.chunk.js",
-    "main.js.map": "/static/js/main.9ff0d15a.chunk.js.map",
+    "main.js": "/static/js/main.bc84a0b9.chunk.js",
+    "main.js.map": "/static/js/main.bc84a0b9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f6f5c338.js",
     "runtime-main.js.map": "/static/js/runtime-main.f6f5c338.js.map",
     "static/css/2.db389a09.chunk.css": "/static/css/2.db389a09.chunk.css",
@@ -14,7 +14,6 @@
     "static/css/2.db389a09.chunk.css.map": "/static/css/2.db389a09.chunk.css.map",
     "static/css/main.23b02396.chunk.css.map": "/static/css/main.23b02396.chunk.css.map",
     "static/js/2.3a0254e7.chunk.js.LICENSE.txt": "/static/js/2.3a0254e7.chunk.js.LICENSE.txt",
-    "static/media/gh_4e63daca45ae_258.jpg": "/static/media/gh_4e63daca45ae_258.e5220d76.jpg",
     "static/media/react-antd-admin.jpeg": "/static/media/react-antd-admin.b0849ee1.jpeg",
     "static/media/vue-element-admin-plus.jpeg": "/static/media/vue-element-admin-plus.21d48b24.jpeg",
     "static/media/vue-print-plugin.jpeg": "/static/media/vue-print-plugin.27ea810a.jpeg",
@@ -25,6 +24,6 @@
     "static/css/2.db389a09.chunk.css",
     "static/js/2.3a0254e7.chunk.js",
     "static/css/main.23b02396.chunk.css",
-    "static/js/main.9ff0d15a.chunk.js"
+    "static/js/main.bc84a0b9.chunk.js"
   ]
 }

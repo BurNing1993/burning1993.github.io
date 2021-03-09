@@ -18,6 +18,14 @@ const projectList: ProjectItem[] = [
     year: "2020",
     projects: [
       {
+        imgUrl: require('./images/bing-wallpaper.jpeg').default,
+        name: "BingWallpaper",
+        tags: ["Next.js", 'Wallpaper'],
+        desc: "Bing 壁纸",
+        demoUrl: "https://bing-wallpaper.vercel.app/",
+        sourceCodeUrl: "https://github.com/BurNing1993/bing-wallpaper",
+      },
+      {
         imgUrl: require('./images/vue-element-admin-plus.jpeg').default,
         name: "VueElementAdminPlus",
         tags: ["Vue3.0", 'ElementPlus'],

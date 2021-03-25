@@ -15,6 +15,18 @@ export interface ProjectItem {
 
 const projectList: ProjectItem[] = [
   {
+    year: "2021",
+    projects: [
+      {
+        imgUrl: require('./images/whiteboard.jpeg').default,
+        name: "WebWhiteboard",
+        tags: ["Vue3.0", 'WebWhiteboard'],
+        desc: "白板",
+        demoUrl: "https://whiteboard.vercel.app/",
+        sourceCodeUrl: "https://github.com/BurNing1993/whiteboard",
+      },
+    ]
+  },  {
     year: "2020",
     projects: [
       {

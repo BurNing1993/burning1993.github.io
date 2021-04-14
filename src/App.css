@@ -7,3 +7,9 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.github-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
